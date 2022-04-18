@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator APP</title>
+    <meta name="description" content="Aplicación que permite generar contraseñas de alta seguridad AdsumST">
+    <link rel="shortcut icon" type="image/x-icon" href="build/img/key.ico" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet"> 
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preload" href="build/css/app.css" as="style">   
+    <link rel="stylesheet" href="build/css/app.css">
+
+  
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <a href="https://www.adsumst.com" target="_blank">
+                <picture>
+                    <source loading="lazy" srcset="build/img/logoAdsum.avif" type="image/avif">
+                    <source loading="lazy" srcset="build/img/logoAdsum.webp" type="image/webp">
+                    <img loading="lazy" src="build/img/logoAdsum.png" alt="Logo AdsumSt">
+                </picture>
+            </a>
+            
+        </div>
+        
+    </header>
+
+    <main>        
+        <div class="container">
+            <div class="result">
+                <div class="result__title field-title">Contraseña Generada</div>
+                <div class="result__info rigth">Click para copiar</div>
+                <div class="result__info left">Copiado</div>
+                <div class="result__viewbox" id="result">HAGA CLICK EN GENERAR CONTRASEÑA</div>
+                <button id="copy-btn" style="--x: 0; --y: 0"><i class="fa fa-copy"></i></button>
+            </div>
+
+            <div class="length range__slider" data-min="4" data-max="32">
+                <div class="length__title field-title" data-length="0">largo:</div>
+                <input type="range" id="slider" min="4" max="32" value="16">
+            </div>
+
+            <div class="settings">
+                <span class="settings__title field-title">Ajustes</span>
+
+                <div class="setting">
+                    <input type="checkbox" id="uppercase" checked >
+                    <label for="uppercase">Incluir Mayúsculas</label>
+                </div>
+
+                <div class="setting">
+                    <input type="checkbox" id="lowercase" checked >
+                    <label for="lowercase">Incluir Minúsculas</label>
+                </div>
+
+                <div class="setting">
+                    <input type="checkbox" id="number" checked >
+                    <label for="number">Incluir Números</label>
+                </div>
+
+                <div class="setting">
+                    <input type="checkbox" id="symbol" checked >
+                    <label for="symbol">Incluir Símbolos</label>
+                </div>
+
+            </div>
+
+            <button class="btn generate" id="generate">Generar Contraseña</button>
+        </div>
+
+    </main>
+
+    <footer>
+        <div  class="footer">
+            <p>Derechos reservados &copy; 2022<a href="https://adsumst.com/servicedesk" target="_blank">Mesa de Servicios Adsum</a>Mario Andrés Hernández</p>
+        </div>
+    </footer>
+
+
+    <script src="build/js/app.js"></script>
+</body>
+</html>
