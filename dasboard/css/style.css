@@ -1,0 +1,257 @@
+:root {
+    
+    --fuentePrincipal: 'Open Sans', sans-serif;
+    --fuenteSecundaria: 'Roboto ', sans-serif;
+    
+    --blanco: #fff;
+    --claro:  #e3e3e3 ;
+    --grisClaro: #f3f3f3 ;
+    --gris: #a8a8a8 ;   
+    --grisOscuro:  #34495e;
+    --azul: #0275d8 ;
+    --azulOscuro: #025aa5; 
+    --Oscuro:   #262a34;
+    --verde: #35ae6b ;
+    --verdeOscuro:  #449d44 ;
+    --danger: #b74848;
+    --dangerOscuro: #c9302c;
+    --bloq: #acacac;
+
+    
+
+}
+
+/***Globales***/
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    background: var(--grisClaro);
+    font-size: 1.5rem;
+    font-family: var(--fuentePrincipal);
+}
+img {
+    width: 100%;
+}
+
+/**Barra Lateral***/
+.barra-lateral {
+    background: var(--grisOscuro);
+    color: var(--blanco);
+    min-width: 30rem;
+    min-height: 100vh ;
+    padding: 0;
+}
+.barra-lateral a {
+    color: var(--blanco);
+}
+
+/**Logo***/
+.barra-lateral .logo {
+    background: var(--azul);
+    margin-bottom: .2rem;
+}
+.barra-lateral .logo h2 {
+    font-size: 3rem;
+    font-family: var(--fuenteSecundaria);
+    padding: 2rem 0;
+    text-align: center;
+    font-weight: 300;
+    margin: 0;
+}
+
+/**Menu***/
+.barra-lateral .menu a {
+    display: block;
+    padding: 2rem;
+    font-family: var(--fuenteSecundaria);
+    font-weight: 500;
+    border-bottom: .1rem solid rgba(255, 255, 255, .1);
+}
+.barra-lateral .menu a:hover {
+    background: var(--verde);
+    text-decoration: none;
+}
+.barra-lateral .menu a i {
+    margin-right: 2rem;
+    font-weight: normal;
+}
+/**Main***/
+.main {
+    padding-top: 4rem;
+}
+.main .columna {
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+.main .titulo {
+    color: var(--Oscuro) ;
+    font-size: 2.5rem;
+    font-weight: 500;
+    font-family: var(--fuenteSecundaria);
+    margin-bottom: 2rem;
+}
+.main .widget {
+    margin-bottom: 4rem;
+}
+
+/**Widget nueva entrada***/
+.main .widget form input[type="text"],
+.main .widget form textarea {
+    width: 100%;
+    padding:  1rem;
+    margin-bottom: 2rem;
+    font-family: var(--fuentePrincipal);
+    border: none;
+    box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.2);
+}
+.main .widget form input[type="text"] {
+    font-weight: 400;
+}
+.main .widget form textarea {
+    height: 40rem;
+    min-height: 20rem;
+    max-width: 100%;
+    min-width: 100%;
+}
+.main .widget form button {
+    background: var(--azul);
+    cursor: pointer;
+    color: var(--blanco);
+    font-family: var(--fuenteSecundaria);
+    font-size: 1.8rem;
+    font-weight: 500;
+    border: none;
+    display: inline-block;
+    padding: 1rem;
+    width: 20rem;
+    border-radius: .3rem;
+    transition: all .3s ease;
+}
+.main .widget form button:hover {
+    background: var(--azulOscuro) ;
+}
+
+/**Widget Estadisticas***/
+.main .estadisticas .contenedor {
+    box-shadow: 0px .1rem .1rem 0px rgba(0,0,0,.2);
+}
+.main .estadisticas .caja {
+    background: var(--blanco);
+    border: .1rem solid var(--claro);
+    padding: 4rem 2rem;
+    flex: 1;
+    text-align: center;
+    font-family: var(--fuenteSecundaria);
+}
+.main .estadisticas .caja h3 {
+    margin-bottom: 1rem;
+    color: var(--verde);
+    font-weight: bold;
+}
+.main .estadisticas .caja p {
+    color: var(--gris);
+    margin-bottom: 0;
+}
+.main .estadisticas .caja:first-child {
+    border-right: none;
+}
+.main .estadisticas .caja:last-child {
+    border-left: none;
+}
+
+/***Widget Comentarios****/
+.main .comentarios .contenedor {
+    box-shadow: 0px 0px .2rem 0px rgba(0,0,0,0.2);
+}
+.main .comentarios .comentario {
+    background: var(--blanco);
+    padding: 2rem;
+    border-bottom: .1rem solid var(--claro);
+}
+.main .comentarios .comentario .foto {
+    width: 6.4rem;
+    height: 6.4rem;
+    overflow: hidden;
+    margin-right: 2rem;
+    border-radius: 10rem;
+}
+.main .comentarios .comentario .foto a {
+    display: inline-block;
+}
+.main .comentarios .comentario .texto {
+    flex: 1;
+}
+.main .comentarios .comentario .texto .texto-comentario {
+    font-size: 1.4rem;
+    font-family: var(--fuentePrincipal);
+}
+.main .comentarios .comentario .botones button {
+    background: none;
+    cursor: pointer;
+    color: var(--claro);
+    font-family: var(--fuenteSecundaria);
+    font-size: 1.4rem;
+    font-weight: 500;
+    border: none;
+    display: inline-block;
+    padding: .5rem 1rem;
+    border-radius: .3rem;
+    transition: all .3s ease;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+
+}
+.main .comentarios .comentario .botones .aprobar {background: var(--verde);}
+.main .comentarios .comentario .botones .eliminar {background: var(--danger);}
+.main .comentarios .comentario .botones .bloquear {color: var(--bloq);}
+
+.main .comentarios .comentario .botones .aprobar:hover {background: var(--verdeOscuro);}
+.main .comentarios .comentario .botones .eliminar:hover {background: var(--dangerOscuro);}
+.main .comentarios .comentario .botones .bloquear:hover {background: var(--bloq); color: var(--blanco);}
+
+/***Mediaqueries***/
+@media screen and (max-width: 1300px) {
+    .barra-lateral {
+        min-width: auto;
+    }
+    .barra-lateral .logo {
+        display: none;
+    }
+    .barra-lateral .menu a span {
+        display: none;
+    }
+    .barra-lateral .menu a i {
+        margin: 0;
+    }
+}
+@media screen and (max-width: 575px) {
+    .barra-lateral {
+        min-height: auto;
+    }
+    .barra-lateral .menu a {
+        display: inline-block;
+        border-bottom: none;
+    }
+    .main .widget form button {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 320px) {
+    .main .comentarios .comentario .foto {
+        width: 3rem;
+        height: 3rem;
+
+    }
+    .main .comentarios .comentario .botones button {
+        width: 100%;
+    }
+}
+
+
+
+

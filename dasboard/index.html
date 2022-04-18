@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+
+    <!--Preload-->
+    <link rel="preload" href="css/bootstrap.min.css" as="style">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>    
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet"> 
+
+    <link rel="preload" href="css/fontello.css" as="style">
+    <link rel="stylesheet" href="css/fontello.css">
+
+    <link rel="preload" href="css/style.css" as="style">
+    <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+<body>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="barra-lateral col-12 col-sm-auto">
+                <div class="logo">
+                    <h2>Dashboard</h2>
+                </div>
+                <nav class="menu d-flex d-sm-block justify-content-center flex-wrap">
+                    <a href="#"><i class="icon-home azul"></i><span>Inicio</span></a>
+                    <a href="#"><i class="icon-doc-text verde"></i><span>Entradas</span></a>
+                    <a href="#"><i class="icon-users rojo"></i><span>Usuarios</span></a>
+                    <a href="#"><i class="icon-cog-alt"></i><span>Configuración</span></a>
+                    <a href="#"><i class="icon-logout"></i><span>Salir</span></a>
+                </nav>
+            </div>
+
+            <main class="main col">
+                <div class="row">
+                    <div class="columna col-lg-7">
+                        <div class="widget nueva_entrada">
+                            <h3 class="titulo">Nueva Entrada</h3>
+                            <form action="">
+                                <input type="text" placeholder="Titulo de la entrada">
+                                <textarea placeholder="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore inventore omnis ea eveniet esse vitae eos, nesciunt officiis quidem ad recusandae aspernatur, fuga qui ab architecto similique eius magnam. Odio."></textarea>  
+                                <div class="d-flex justify-content-end ">
+                                    <button><i class="icon icon-edit"></i>Enviar</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="columna col-lg-5">
+                        <div class="widget estadisticas">
+                            <h3 class="titulo">Estadisticas</h3>
+                            <div class="contenedor d-flex flex-wrap">
+                                <div class="caja">
+                                    <h3>20.568</h3>
+                                    <p>Visitas</p>
+                                </div>
+                                <div class="caja">
+                                    <h3>2.978</h3>
+                                    <p>Registros</p>
+                                </div>
+                                <div class="caja">
+                                    <h3>331.568</h3>
+                                    <p>Ingresos</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="widget comentarios">
+                            <h3 class="titulo">Comentarios</h3>
+                            <div class="contenedor">
+                                <div class="comentario d-flex flex-wrap">
+                                    <div class="foto">
+                                        <a href="#">
+                                            <img loading="lazy" src="img/mario.jpg" width="100" alt="Imagen entrada">
+                                        </a>
+                                    </div>
+                                    <div class="texto">
+                                        <a href="#">Andrés Hernández</a>
+                                        <p>en <a href="#">Mi primer entrada</a></p>
+                                        <p class="texto-comentario">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil incidunt, vero ipsa nisi dolorem, debitis cupiditate nemo, asperiores adipisci delectus consectetur ad iure. Ipsa veniam dolore quisquam tempore earum soluta!</p>
+                                    </div>
+                                    <div class="botones d-flex justify-content-start flex-wrap w-100">
+                                        <button class="aprobar"><i class="icono icon-ok"></i>Aprobar</button>
+                                        <button class="eliminar"><i class="icono icon-cancel"></i>Eliminar</button>
+                                        <button class="bloquear"><i class="icono icon-flag"></i>Bloquear</button>
+                                    </div>
+                                </div>
+
+                                <div class="comentario d-flex flex-wrap">
+                                    <div class="foto">
+                                        <a href="#">
+                                            <img loading="lazy" src="img/lili.JPG" width="100" alt="Imagen entrada">
+                                        </a>
+                                    </div>
+                                    <div class="texto">
+                                        <a href="#">Lili Aguirre</a>
+                                        <p>en <a href="#">Mi primer entrada</a></p>
+                                        <p class="texto-comentario">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil incidunt, vero ipsa nisi dolorem, debitis cupiditate nemo, asperiores adipisci delectus consectetur ad iure. Ipsa veniam dolore quisquam tempore earum soluta!</p>
+                                    </div>
+                                    <div class="botones d-flex justify-content-start flex-wrap w-100">
+                                        <button class="aprobar"><i class="icono icon-ok"></i>Aprobar</button>
+                                        <button class="eliminar"><i class="icono icon-cancel"></i>Eliminar</button>
+                                        <button class="bloquear"><i class="icono icon-flag"></i>Bloquear</button>
+                                    </div>
+                                </div>
+
+                                <div class="comentario d-flex flex-wrap">
+                                    <div class="foto">
+                                        <a href="#">
+                                            <img loading="lazy" src="img/angela.JPG" width="100" alt="Imagen entrada">
+                                        </a>
+                                    </div>
+                                    <div class="texto">
+                                        <a href="#">Angela Giraldo</a>
+                                        <p>en <a href="#">Mi primer entrada</a></p>
+                                        <p class="texto-comentario">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil incidunt, vero ipsa nisi dolorem, debitis cupiditate nemo, asperiores adipisci delectus consectetur ad iure. Ipsa veniam dolore quisquam tempore earum soluta!</p>
+                                    </div>
+                                    <div class="botones d-flex justify-content-start flex-wrap w-100">
+                                        <button class="aprobar"><i class="icono icon-ok"></i>Aprobar</button>
+                                        <button class="eliminar"><i class="icono icon-cancel"></i>Eliminar</button>
+                                        <button class="bloquear"><i class="icono icon-flag"></i>Bloquear</button>
+                                    </div>
+                                </div>
+
+                                <div class="comentario d-flex flex-wrap">
+                                    <div class="foto">
+                                        <a href="#">
+                                            <img loading="lazy" src="img/diva.JPG" width="100" alt="Imagen entrada">
+                                        </a>
+                                    </div>
+                                    <div class="texto">
+                                        <a href="#">Diva Hernández</a>
+                                        <p>en <a href="#">Mi primer entrada</a></p>
+                                        <p class="texto-comentario">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil incidunt, vero ipsa nisi dolorem, debitis cupiditate nemo, asperiores adipisci delectus consectetur ad iure. Ipsa veniam dolore quisquam tempore earum soluta!</p>
+                                    </div>
+                                    <div class="botones d-flex justify-content-start flex-wrap w-100">
+                                        <button class="aprobar"><i class="icono icon-ok"></i>Aprobar</button>
+                                        <button class="eliminar"><i class="icono icon-cancel"></i>Eliminar</button>
+                                        <button class="bloquear"><i class="icono icon-flag"></i>Bloquear</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+    
+    
+</body>
+</html>

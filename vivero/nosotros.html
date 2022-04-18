@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebSite ShoPlant</title>
+    <meta name="description" content="Pagina de Nosotros ShoPlant">
+
+    
+    <!--Preload-->
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&display=swap" crossorigin="crossorigin" as="font">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="preload" href="css/style.css" as="style">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1 class="titulo">ShoPlant <span>WebSite</span></h1>
+    </header>
+
+    <div class="nav-bg">
+        <nav class="navegacion-principal contenedor">
+            <a href="index.html">Inicio</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="index.html">Vivero</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </div>
+    <section class="hero">
+        <div class="contenido-hero">
+            <h2>Venta y Producción de Plantas</h2>
+
+                <div class="ubicacion">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-2" width="88" height="88" viewBox="0 0 24 24" stroke-width="2" stroke="#ffbf00" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <line x1="18" y1="6" x2="18" y2="6.01" />
+                        <path d="M18 13l-3.5 -5a4 4 0 1 1 7 0l-3.5 5" />
+                        <polyline points="10.5 4.75 9 4 3 7 3 20 9 17 15 20 21 17 21 15" />
+                        <line x1="9" y1="4" x2="9" y2="17" />
+                        <line x1="15" y1="15" x2="15" y2="20" />
+                    </svg>
+                    <p>Manizales, Caldas</p>
+                </div>       
+           
+
+            <a href="#contacto" class="boton">Contactar</a>
+        </div>
+    </section>
+
+    <main class="contenedor sombra" id="vivero">        
+        <h2>Acerca de</h2>
+       
+        <div class="sobre-nosotros">
+            <div>
+                <img loading='lazy' class="sobre-nosotros__imagen" src="img/acerca-de.jpg" alt="Imagen Nosotros">
+            </div>
+
+            <div class="sobre-nosotros__texto">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error nam, eligendi magni ipsa labore eaque, ab ut officiis cupiditate sint non quibusdam fugiat dolorum facilis ratione corporis! Nostrum, placeat adipisci.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem quibusdam, voluptates quisquam nobis iste aperiam ab totam est omnis mollitia, non facilis vero obcaecati libero dicta numquam necessitatibus harum eveniet!</p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Error nam, eligendi magni ipsa labore eaque, ab ut officiis cupiditate sint non quibusdam fugiat dolorum facilis ratione corporis! Nostrum, placeat adipisci.
+                
+                    
+            </div>
+        </div>
+        
+
+       <div id="contacto" class="contacto">
+            <h2>Contacto</h2>
+
+           
+
+            <form class="formulario" action="#" method="POST">
+                <legend>Contactános llenando todos los campos</legend>
+
+                <div class="contenedor-campos">
+                    <div class="campo">
+                        <label for="nombre" >Nombre</label>
+                        <input type="text" name="nombre" placeholder="Nombre" id="nombre" required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="telefono" >Teléfono</label>
+                        <input type="tel" name="telefono" placeholder="Teléfono" id="telefono" required>
+                    </div>
+
+                    <div class="campo w-100">
+                        <label for="email" >Correo</label>
+                        <input type="email" name="correo" placeholder="Ingresa tu email" id="email" required >
+                    </div>
+                    <div class="campo w-100">
+                        <label for="mensaje" >Mensaje:</label>
+
+                        <textarea id="mensaje" required></textarea>
+                    </div>
+                </div><!--.contenedor-campos-->
+                <div class="enviar">
+                    <input class="boton" type="submit" value="Enviar">
+                </div>
+            </form>
+        </div>
+
+
+    </main>
+
+  
+
+    <footer class="footer">
+        <p>
+            Derechos reservados 2022 . ShoPlant Website
+        </p>
+    </footer>    
+</body>
+</html>
