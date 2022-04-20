@@ -4,29 +4,29 @@ Proyectos realizados con HTML - CSS - JAVASCRIPT.
 
 Algunos de los conocimientos adquiridos en este proceso de formación son:
 
-Flexbox y CSS Grid.
+- Flexbox y CSS Grid.
 
-Logical Properties.
+- Logical Properties.
 
-Unidades y Medidas.
+- Unidades y Medidas.
 
-Responsive Web Design con Mobile First.
+- Responsive Web Design con Mobile First.
 
-Media Queries.
+- Media Queries.
 
-HTML: etiquetas, formularios, imágenes, videos, etc.
+- HTML: etiquetas, formularios, imágenes, videos, etc.
 
-Custom Properties.
+- Custom Properties.
 
-Gulp Workflows.
+- Gulp Workflows.
 
-SASS - Mixins, Variables, Funciones  y todo lo necesario para usar SASS.
+- SASS - Mixins, Variables, Funciones  y todo lo necesario para usar SASS.
 
-BEM con SASS.
+- BEM con SASS.
 
-Animaciones, Transiciones y Transformaciones.
+- Animaciones, Transiciones y Transformaciones.
 
-Optimización de Sitios Web.
+- Optimización de Sitios Web.
 
-Imágenes Webp y Avif.
+- Imágenes Webp y Avif.
 
