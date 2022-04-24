@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafetería SASS</title>
+    <meta name="description" content="Pagina web Cafeteria">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bona+Nova&family=Raleway:wght@700;900&family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
+    
+    <link rel="preload" href="build/css/app.css" as="style">
+    <link rel="stylesheet" href="build/css/app.css">
+</head>
+<body>
+    <header class="header header-galeria">
+        <div class="contenido-header contenedor">
+            <div class="barra">
+                <div class="logo">
+                    <img src="build/img/logo.svg" alt="Logo Cafetería">
+                </div>
+                <nav class="nav-principal">
+                    <a href="index.html">Inicio</a>
+                    <a href="nosotros.html">Nosotros</a>
+                    <a href="proceso.html">Proceso</a>
+                    <a href="menu.html">Menú</a>
+                    <a class="activo" href="galeria.html">Galería</a>
+                    <a href="contacto.html">Contacto</a>
+                </nav>
+            </div>
+            
+            <div class="texto-header">
+                <h1>Galería</h1>
+            </div>
+        </div>
+    </header>
+
+    <main class="contenedor contenido-principal">
+
+        <h2><span>Vive la</span> experiencia </h2>
+
+        <div class="galeria">
+            <div class="imagen">
+                <picture>
+                    <source loading="lazy" srcset="build/img/galeria/galeria_01.avif" type="image/avif">
+                    <source loading="lazy" srcset="build/img/galeria/galeria_01.webp" type="image/webp">
+                    <img loading="lazy" decoding="async" src="build/img/galeria/galeria_01.jpg" alt="Imagen Galería">
+                </picture>                   
+            </div>
+            <div class="imagen">
+                        <picture>
+                    <source loading="lazy" srcset="build/img/galeria/galeria_02.avif" type="image/avif">
+                    <source loading="lazy" srcset="build/img/galeria/galeria_02.webp" type="image/webp">
+                    <img loading="lazy" decoding="async" src="build/img/galeria/galeria_02.jpg" alt="Imagen Galería">
+                </picture>  
+            </div>
+            <div class="imagen">
+                       <picture>
+                    <source loading="lazy" srcset="build/img/galeria/galeria_03.avif" type="image/avif">
+                    <source loading="lazy" srcset="build/img/galeria/galeria_03.webp" type="image/webp">
+                    <img loading="lazy" decoding="async" src="build/img/galeria/galeria_03.jpg" alt="Imagen Galería">
+                </picture>  
+            </div>
+            <div class="imagen">
+                      <picture>
+                    <source loading="lazy" srcset="build/img/galeria/galeria_04.avif" type="image/avif">
+                    <source loading="lazy" srcset="build/img/galeria/galeria_04.webp" type="image/webp">
+                    <img loading="lazy" decoding="async" src="build/img/galeria/galeria_04.jpg" alt="Imagen Galería">
+                </picture>  
+            </div>
+            <div class="imagen">
+                     <picture>
+                    <source loading="lazy" srcset="build/img/galeria/galeria_05.avif" type="image/avif">
+                    <source loading="lazy" srcset="build/img/galeria/galeria_05.webp" type="image/webp">
+                    <img loading="lazy" decoding="async" src="build/img/galeria/galeria_05.jpg" alt="Imagen Galería">
+                </picture>  
+            </div>
+            <div class="imagen">
+                       <picture>
+                    <source loading="lazy" srcset="build/img/galeria/galeria_06.avif" type="image/avif">
+                    <source loading="lazy" srcset="build/img/galeria/galeria_06.webp" type="image/webp">
+                    <img loading="lazy" decoding="async" src="build/img/galeria/galeria_06.jpg" alt="Imagen Galería">
+                </picture>  
+            </div>
+            <div class="imagen">
+                     <picture>
+                    <source loading="lazy" srcset="build/img/galeria/galeria_07.avif" type="image/avif">
+                    <source loading="lazy" srcset="build/img/galeria/galeria_07.webp" type="image/webp">
+                    <img loading="lazy" decoding="async" src="build/img/galeria/galeria_07.jpg" alt="Imagen Galería">
+                </picture>  
+            </div>
+            <div class="imagen">
+                       <picture>
+                    <source loading="lazy" srcset="build/img/galeria/galeria_08.avif" type="image/avif">
+                    <source loading="lazy" srcset="build/img/galeria/galeria_08.webp" type="image/webp">
+                    <img loading="lazy" decoding="async" src="build/img/galeria/galeria_08.jpg" alt="Imagen Galería">
+                </picture>  
+            </div>
+            <div class="imagen">
+                       <picture>
+                    <source loading="lazy" srcset="build/img/galeria/galeria_09.avif" type="image/avif">
+                    <source loading="lazy" srcset="build/img/galeria/galeria_09.webp" type="image/webp">
+                    <img loading="lazy" decoding="async" src="build/img/galeria/galeria_09.jpg" alt="Imagen Galería">
+                </picture>  
+            </div>
+            <div class="imagen">
+                       <picture>
+                    <source loading="lazy" srcset="build/img/galeria/galeria_10.avif" type="image/avif">
+                    <source loading="lazy" srcset="build/img/galeria/galeria_10.webp" type="image/webp">
+                    <img loading="lazy" decoding="async" src="build/img/galeria/galeria_10.jpg" alt="Imagen Galería">
+                </picture>  
+            </div>
+        </div>
+        
+    </main>
+
+    <footer class="footer">
+        <div class="contenedor contenido-footer bg-withe">
+            <div class="footer-box ubicacion">
+                <h3>Ubicación</h3>
+                <p>Cra 26 # 28 - 16</p>
+                <p>Manizales, Caldas</p>
+            </div>
+            <div class="footer-box reservacion">
+                <h3>Reservación</h3>
+                <p>Tel. 3224503479</p>
+                <a href="tel:+3224503479">Llamar</a>
+            </div>
+            <div class="footer-box horario">
+                <h3>Horario</h3>
+                <p>Lun-Jue: 11:00 - 22:00</p>
+                <p>Vie-Sab: 09:00 - 24:00</p>
+                <p>Domingo: Cerrado</p>
+            </div>            
+        </div>
+        <p class="copyright">Derechos reservados &copy; La cafetería</p>
+    </footer>
+
+    <script src="build/js/imagenes.js"></script>
+</body>
+</html>
