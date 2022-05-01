@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="es" class="html">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio Mario Andrés</title>
+    <meta name="description" content="Pagina Web Portafolio de Mario Andrés">
+
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="https://kit.fontawesome.com/51bd04d396.js" crossorigin="anonymous"></script>      
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">    
+    
+    <!--Fuentes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700;900&display=swap" rel="stylesheet">
+
+           
+    <!--Preload css--> 
+    <link rel="preload" href="css/style.css" as="style">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body class="body">
+    <span class="ir-arriba fa-solid fa-circle-chevron-up"></span>
+    <header>
+        <div class="container"> 
+            <!--Logo + Menu-->
+            <div class="nav row rounded-top align-items-stretch justify-content-between">
+
+                <!--Logotipo-->
+                <div class="col-md-12 col-lg logo d-flex align-items-center justify-content-center justify-content-lg-start">                   
+                   <h2 class="titulo">Mario Andrés <i class="fa-solid fa-code"> </i>  <span class="typed"></span></h2>
+                </div>
+
+                
+
+                <!--Menu-->
+                <nav class="col-md-12 col-lg-auto menu d-flex align-items-stretch flex-wrap flex-sm-nowrap">
+
+                                        
+                    <a href="#acerca-de" class="c-1 d-flex pt-4 flex-column text-center">                       
+                        Acerca de
+                        <span>
+                            <i class="fa-solid fa-address-card"></i>
+                        </span>                                           
+                    </a>
+                   
+                    <a href="#portafolio" class="c-2 d-flex pt-4 flex-column text-center">
+                        Portafolio  
+                        <span>
+                            <i class="fa-solid fa-briefcase"></i>
+                        </span>                      
+                    </a>
+
+                    <a href="#contacto" class="c-3 d-flex pt-4 flex-column text-center">                       
+                            Contacto
+                            <span>
+                                <i class="fa-solid fa-envelope"></i>
+                            </span>
+                    </a>
+
+                </nav>
+
+            </div>
+
+            <!-- Slider-->
+            <div class="row slider">
+                <div class="col">
+                    <div class="carousel slide " id="slider" data-bs-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-bs-target="#slider" data-bs-slide-to="0" class="active" aria-current="true"></li>
+                            <li data-bs-target="#slider" data-bs-slide-to="1"></li>
+                            <li data-bs-target="#slider" data-bs-slide-to="2"></li>             
+                            <li data-bs-target="#slider" data-bs-slide-to="3"></li>             
+                            <li data-bs-target="#slider" data-bs-slide-to="4"></li>             
+                            <li data-bs-target="#slider" data-bs-slide-to="5"></li>             
+                            <li data-bs-target="#slider" data-bs-slide-to="6"></li>             
+                            <li data-bs-target="#slider" data-bs-slide-to="7"></li>                                                     
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                
+                                <picture>
+                                    <source loading="lazy" srcset="img/slide.avif" type="image/avif">
+                                    <source loading="lazy" srcset="img/slide.webp" type="image/webp">
+                                    <img loading="lazy" src="img/slide.jpg" alt="Imagen Slider" class="d-block w-100">
+                                </picture>                                                             
+                            </div>
+                            <div class="carousel-item ">
+                                
+                                <picture>
+                                    <source loading="lazy" srcset="img/slide4.avif" type="image/avif">
+                                    <source loading="lazy" srcset="img/slide4.webp" type="image/webp">
+                                    <img loading="lazy" src="img/slide4.jpg" alt="Imagen Slider" class="d-block w-100">
+                                </picture>                                                             
+                            </div>
+                            <div class="carousel-item">
+                                <picture>
+                                    <source loading="lazy" srcset="img/slide2.avif" type="image/avif">
+                                    <source loading="lazy" srcset="img/slide2.webp" type="image/webp">
+                                    <img loading="lazy" src="img/slide2.jpg" alt="Imagen Slider" class="d-block w-100">
+                                </picture> 
+                                
+                            </div>
+                            <div class="carousel-item">
+                                <picture>
+                                    <source loading="lazy" srcset="img/slide3.avif" type="image/avif">
+                                    <source loading="lazy" srcset="img/slide3.webp" type="image/webp">
+                                    <img loading="lazy" src="img/slide3.jpg" alt="Imagen Slider" class="d-block w-100">
+                                </picture> 
+                                
+                            </div>
+     
+                            <div class="carousel-item">
+                                <picture>
+                                    <source loading="lazy" srcset="img/slide5.avif" type="image/avif">
+                                    <source loading="lazy" srcset="img/slide5.webp" type="image/webp">
+                                    <img loading="lazy" src="img/slide5.jpg" alt="Imagen Slider" class="d-block w-100">
+                                </picture> 
+                                
+                            </div>
+                            <div class="carousel-item">
+                                <picture>
+                                    <source loading="lazy" srcset="img/slide6.avif" type="image/avif">
+                                    <source loading="lazy" srcset="img/slide6.webp" type="image/webp">
+                                    <img loading="lazy" src="img/slide6.jpg" alt="Imagen Slider" class="d-block w-100">
+                                </picture> 
+                                
+                            </div>
+
+                            <div class="carousel-item">
+                                <picture>
+                                    <source loading="lazy" srcset="img/slide7.avif" type="image/avif">
+                                    <source loading="lazy" srcset="img/slide7.webp" type="image/webp">
+                                    <img loading="lazy" src="img/slide7.jpg" alt="Imagen Slider" class="d-block w-100">
+                                </picture> 
+                                
+                            </div>
+
+                            <div class="carousel-item">
+                                <picture>
+                                    <source loading="lazy" srcset="img/slide8.avif" type="image/avif">
+                                    <source loading="lazy" srcset="img/slide8.webp" type="image/webp">
+                                    <img loading="lazy" src="img/slide8.jpg" alt="Imagen Slider" class="d-block w-100">
+                                </picture> 
+                                
+                            </div>
+                        </div>  
+
+                        <a href="#slider" class="carousel-control-prev " data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Anterior</span>
+                        </a>
+                        <a href="#slider" class="carousel-control-next" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Siguiente</span>
+                        </a>                       
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </header>    
+
+    <main>
+        <div class="container">
+
+            <!-- Sección Acerca de -->
+            <div class="row acerca-de align-items-center" id="acerca-de">
+
+                <div class="col-12 col-lg-4 foto">
+                    <picture>
+                        <source loading="lazy" srcset="img/img.avif" type="image/avif">
+                        <source loading="lazy" srcset="img/img.webp" type="image/webp">
+                        <img loading="lazy" src="img/img.jpg" class="rounded-circle"  alt="Imagen Acerca de">
+                    </picture>
+                    
+                    <p class="nombre">Mario Andrés Hernández Zapata</p>
+                </div>
+
+                <div class="col-12 col-lg-8 info">
+                    <h2 class="titulo">Acerca de</h2>
+                    <p class="resumen">Tecnólogo en Análisis y Desarrollo de Sistemas de Información, con certificación Itil V4, Scrum fundamentals; conocimientos en lenguajes Front End (HTML5-CCS3-JavaScript) Back End (JavaScript-PHP-SQL)</p>
+                    <p class="resumen">Plataformas, herramientas y técnicas aprendidas: Sass - Bootstrap - Normalize - Node-js - npm - gulp - Modernizr - RWD - Grid - FlexBox - Git - Github - Sintaxis de BEM - </p>                   
+
+                    <div class="row slider slider-skills ">
+                        <div class="col">
+                            <div class="carousel slide carousel-fade " id="skills" data-bs-ride="carousel">
+                              
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active" data-bs-interval="2000">                                        
+                                        <picture>
+                                            <source loading="lazy" srcset="img/skills/html.avif" type="image/avif">
+                                            <source loading="lazy" srcset="img/skills/html.webp" type="image/webp">
+                                            <img loading="lazy" src="img/skills/html.png" alt="Imagen Slider" class="d-block w-100">
+                                        </picture>                                                             
+                                    </div>
+                                    <div class="carousel-item" data-bs-interval="2000">
+                                        <picture>
+                                            <source loading="lazy" srcset="img/skills/css.avif" type="image/avif">
+                                            <source loading="lazy" srcset="imgskills//css.webp" type="image/webp">
+                                            <img loading="lazy" src="img/skills/css.png" alt="Imagen Slider" class="d-block">
+                                        </picture> 
+                                        
+                                    </div>
+                                    <div class="carousel-item" data-bs-interval="2000">
+                                        <picture>
+                                            <source loading="lazy" srcset="img/skills/sass.avif" type="image/avif">
+                                            <source loading="lazy" srcset="img/skills/sass.webp" type="image/webp">
+                                            <img loading="lazy" src="img/skills/sass.png" alt="Imagen Slider" class="d-block">
+                                        </picture> 
+                                        
+                                    </div>
+                                    <div class="carousel-item" data-bs-interval="2000">
+                                        <picture>
+                                            <source loading="lazy" srcset="img/skills/bootstrap.avif" type="image/avif">
+                                            <source loading="lazy" srcset="img/skills/bootstrap.webp" type="image/webp">
+                                            <img loading="lazy" src="img/skills/bootstrap.png" alt="Imagen Slider" class="d-block">
+                                        </picture> 
+                                        
+                                    </div>
+                                    <div class="carousel-item" data-bs-interval="2000">
+                                        <picture>
+                                            <source loading="lazy" srcset="img/skills/javascript.avif" type="image/avif">
+                                            <source loading="lazy" srcset="img/skills/javascript.webp" type="image/webp">
+                                            <img loading="lazy" src="img/skills/javascript.png" alt="Imagen Slider" class="d-block">
+                                        </picture> 
+                                        
+                                    </div>
+                                    <div class="carousel-item" data-bs-interval="2000">
+                                        <picture>
+                                            <source loading="lazy" srcset="img/skills/node.avif" type="image/avif">
+                                            <source loading="lazy" srcset="img/skills/node.webp" type="image/webp">
+                                            <img loading="lazy" src="img/skills/node.png" alt="Imagen Slider" class="d-block">
+                                        </picture> 
+                                        
+                                    </div>
+                                    <div class="carousel-item" data-bs-interval="2000">
+                                        <picture>
+                                            <source loading="lazy" srcset="img/skills/gulp.avif" type="image/avif">
+                                            <source loading="lazy" srcset="img/skills/gulp.webp" type="image/webp">
+                                            <img loading="lazy" src="img/skills/gulp.png" alt="Imagen Slider" class="d-block">
+                                        </picture>                                         
+                                    </div>
+                                    <div class="carousel-item" data-bs-interval="2000">
+                                        <picture>
+                                            <source loading="lazy" srcset="img/skills/npm.avif" type="image/avif">
+                                            <source loading="lazy" srcset="img/skills/npm.webp" type="image/webp">
+                                            <img loading="lazy" src="img/skills/npm.png" alt="Imagen Slider" class="d-block">
+                                        </picture>                                         
+                                    </div>
+                                    <div class="carousel-item" data-bs-interval="2000">
+                                        <picture>
+                                            <source loading="lazy" srcset="img/skills/modernizr.avif" type="image/avif">
+                                            <source loading="lazy" srcset="img/skills/modernizr.webp" type="image/webp">
+                                            <img loading="lazy" src="img/skills/modernizr.png" alt="Imagen Slider" class="d-block">
+                                        </picture>                                         
+                                    </div>
+        
+                                    <div class="carousel-item" data-bs-interval="2000">
+                                        <picture>
+                                            <source loading="lazy" srcset="img/skills/mysql.avif" type="image/avif">
+                                            <source loading="lazy" srcset="img/skills/mysql.webp" type="image/webp">
+                                            <img loading="lazy" src="img/skills/mysql.png" alt="Imagen Slider" class="d-block">
+                                        </picture> 
+                                        
+                                    </div>
+                                    <div class="carousel-item" data-bs-interval="2000">
+                                        <picture>
+                                            <source loading="lazy" srcset="img/skills/database.avif" type="image/avif">
+                                            <source loading="lazy" srcset="img/skills/database.webp" type="image/webp">
+                                            <img loading="lazy" src="img/skills/database.png" alt="Imagen Slider" class="d-block">
+                                        </picture>                                         
+                                    </div>
+
+                                    <div class="carousel-item" data-bs-interval="2000">
+                                        <picture>
+                                            <source loading="lazy" srcset="img/skills/git.avif" type="image/avif">
+                                            <source loading="lazy" srcset="img/skills/git.webp" type="image/webp">
+                                            <img loading="lazy" src="img/skills/git.png" alt="Imagen Slider" class="d-block">
+                                        </picture>                                         
+                                    </div>
+                                    <div class="carousel-item" data-bs-interval="2000">
+                                        <picture>
+                                            <source loading="lazy" srcset="img/skills/github.avif" type="image/avif">
+                                            <source loading="lazy" srcset="img/skills/github.webp" type="image/webp">
+                                            <img loading="lazy" src="img/skills/github.png" alt="Imagen Slider" class="d-block">
+                                        </picture>                                         
+                                    </div>
+                                    <div class="carousel-item" data-bs-interval="2000">
+                                        <picture>
+                                            <source loading="lazy" srcset="img/skills/rwd.avif" type="image/avif">
+                                            <source loading="lazy" srcset="img/skills/rwd.webp" type="image/webp">
+                                            <img loading="lazy" src="img/skills/rwd.png" alt="Imagen Slider" class="d-block">
+                                        </picture>                                         
+                                    </div>
+                                    <div class="carousel-item" data-bs-interval="2000">
+                                        <picture>
+                                            <source loading="lazy" srcset="img/skills/webp.avif" type="image/avif">
+                                            <source loading="lazy" srcset="img/skills/webp.webp" type="image/webp">
+                                            <img loading="lazy" src="img/skills/webp.png" alt="Imagen Slider" class="d-block">
+                                        </picture>                                         
+                                    </div>
+                                    <div class="carousel-item" data-bs-interval="2000">
+                                        <picture>
+                                            <source loading="lazy" srcset="img/skills/visual.avif" type="image/avif">
+                                            <source loading="lazy" srcset="img/skills/visual.webp" type="image/webp">
+                                            <img loading="lazy" src="img/skills/visual.png" alt="Imagen Slider" class="d-block">
+                                        </picture> 
+
+                                    </div>  
+                                    <div class="carousel-item" data-bs-interval="2000">
+                                        <picture>
+                                            <source loading="lazy" srcset="img/skills/wordpress.avif" type="image/avif">
+                                            <source loading="lazy" srcset="img/skills/wordpress.webp" type="image/webp">
+                                            <img loading="lazy" src="img/skills/wordpress.png" alt="Imagen Slider" class="d-block">
+                                        </picture>                                         
+                                   </div>
+                                   <div class="carousel-item" data-bs-interval="2000">
+                                        <picture>
+                                            <source loading="lazy" srcset="img/skills/php.avif" type="image/avif">
+                                            <source loading="lazy" srcset="img/skills/php.webp" type="image/webp">
+                                            <img loading="lazy" src="img/skills/php.png" alt="Imagen Slider" class="d-block">
+                                        </picture>                                         
+                                    </div>
+                                    <div class="carousel-item" data-bs-interval="2000">
+                                        <picture>
+                                            <source loading="lazy" srcset="img/skills/table-plus.avif" type="image/avif">
+                                            <source loading="lazy" srcset="img/skills/table-plus.webp" type="image/webp">
+                                            <img loading="lazy" src="img/skills/table-plus.png" alt="Imagen Slider" class="d-block">
+                                        </picture>                                         
+                                    </div>
+                     
+                            </div>
+                        </div>
+                    </div>    
+
+                </div>                   
+   
+            </div>        
+
+
+            <!-- Seccion portafolio-->
+            <div class="row portafolio" id="portafolio">
+                <div class="col">
+                    <H2 class="titulo">Portafolio</H2>
+                    <div class="row justify-content-center">           
+      
+                        <form action="#">
+                            <input type="text" class="barra-busqueda" id="barra-busqueda" placeholder="Buscar">
+                        </form>         
+                        <div class="categorias" id="categorias">
+                            <a href="#" class="activo">Todos</a>
+                            <a href="#">E-Commerce</a>
+                            <a href="#">Blog</a>
+                            <a href="#">Portafolios</a>
+                            <a href="#">Negocios y Servicios</a>                            
+                            <a href="#">Comidas y Bebidas</a>
+                            <a href="#">Eventos</a>
+                            <a href="#">Formularios</a>
+                        </div>            
+                        
+                    </div>
+
+                    <section class="grid" id="grid">
+                        <div class="item" 
+                            data-categoria="e-commerce" 
+                            data-etiquetas="carrito e-commerce curso compras universidad educación javascript"
+                            data-descripcion="Carrito de compras"
+                            data-link="www.adsumst.com"
+                            
+                            >
+                            <div class="item-contenido">
+                                
+                                <picture>
+                                    <source loading="lazy" srcset="img/portafolio/1.avif" type="image/avif">
+                                    <source loading="lazy" srcset="img/portafolio/1.webp" type="image/webp">
+                                    <img loading="lazy" src="img/portafolio/1.jpg" alt="Imagen Proyecto">
+                                </picture>                                                            
+                            </div>
+                        </div>  
+
+                        <div class="item" 
+                            data-categoria="comidas y bebidas" 
+                            data-etiquetas="café cafetería té local comidas bebidas sass"
+                            data-descripcion="Cafetería"
+                            >
+                            <div class="item-contenido">
+                              <picture>
+                                <source loading="lazy" srcset="img/portafolio/2.avif" type="image/avif">
+                                <source loading="lazy" srcset="img/portafolio/2.webp" type="image/webp">
+                                <img loading="lazy" src="img/portafolio/2.jpg" alt="Imagen Proyecto">
+                            </picture>                                 
+                            </div>
+                        </div> 
+
+                        <div class="item" 
+                            data-categoria="eventos" 
+                            data-etiquetas="e-commerce rock edm festival evento sass javascript"
+                            data-descripcion="MusicFestival"
+                            >
+                            <div class="item-contenido">
+                           <picture>
+                                <source loading="lazy" srcset="img/portafolio/3.avif" type="image/avif">
+                                <source loading="lazy" srcset="img/portafolio/3.webp" type="image/webp">
+                                <img loading="lazy" src="img/portafolio/3.jpg" alt="Imagen Proyecto">
+                            </picture>                                 
+                            </div>
+                        </div>  
+                        
+                        <div class="item" 
+                            data-categoria="negocios y servicios" 
+                            data-etiquetas="servicios negocios wallet nucleus pagos "
+                            data-descripcion="Nucleus E-Wallet"
+                            >
+                            <div class="item-contenido">
+                           <picture>
+                                <source loading="lazy" srcset="img/portafolio/4.avif" type="image/avif">
+                                <source loading="lazy" srcset="img/portafolio/4.webp" type="image/webp">
+                                <img loading="lazy" src="img/portafolio/4.jpg" alt="Imagen Proyecto">
+                            </picture>                                
+                            </div>
+                        </div> 
+
+                        <div class="item" 
+                        data-categoria="negocios y servicios" 
+                        data-etiquetas="servicios ventas arquitectura arboles madera bosque tranquilidad "
+                        data-descripcion="BosqueArquitectura"
+                        >
+                        <div class="item-contenido">
+                          <picture>
+                                <source loading="lazy" srcset="img/portafolio/5.avif" type="image/avif">
+                                <source loading="lazy" srcset="img/portafolio/5.webp" type="image/webp">
+                                <img loading="lazy" src="img/portafolio/5.jpg" alt="Imagen Proyecto">
+                            </picture>                               
+                        </div>
+                    </div> 
+
+                    <div class="item" 
+                        data-categoria="e-commerce" 
+                        data-etiquetas="e-commerce ventas store tienda ropa camisetas camisas productos"
+                        data-descripcion="FrontEndStore"
+                        >
+                        <div class="item-contenido">
+                          <picture>
+                                <source loading="lazy" srcset="img/portafolio/6.avif" type="image/avif">
+                                <source loading="lazy" srcset="img/portafolio/6.webp" type="image/webp">
+                                <img loading="lazy" src="img/portafolio/6.jpg" alt="Imagen Proyecto">
+                            </picture>                               
+                        </div>
+                    </div> 
+
+                    <div class="item" 
+                        data-categoria="e-commerce" 
+                        data-etiquetas="e-commerce audifonos ventas tecnologia tech"
+                        data-descripcion="TechPro"
+                        >
+                        <div class="item-contenido">
+                         <picture>
+                                <source loading="lazy" srcset="img/portafolio/7.avif" type="image/avif">
+                                <source loading="lazy" srcset="img/portafolio/7.webp" type="image/webp">
+                                <img loading="lazy" src="img/portafolio/7.jpg" alt="Imagen Proyecto">
+                            </picture>                               
+                        </div>
+                    </div> 
+
+                    <div class="item" 
+                        data-categoria="negocios y servicios" 
+                        data-etiquetas="negocios servicios plantas arboles bosque suculentas cactus vivero"
+                        data-descripcion="ShoPlant"
+                        >
+                        <div class="item-contenido">
+                        <picture>
+                                <source loading="lazy" srcset="img/portafolio/8.avif" type="image/avif">
+                                <source loading="lazy" srcset="img/portafolio/8.webp" type="image/webp">
+                                <img loading="lazy" src="img/portafolio/8.jpg" alt="Imagen Proyecto">
+                            </picture>                               
+                        </div>
+                    </div> 
+                    <div class="item" 
+                        data-categoria="blog" 
+                        data-etiquetas="blog administrador entradas módulos"
+                        data-descripcion="Administrador de entradas Blog"
+                        >
+                        <div class="item-contenido">
+                           <picture>
+                                <source loading="lazy" srcset="img/portafolio/9.avif" type="image/avif">
+                                <source loading="lazy" srcset="img/portafolio/9.webp" type="image/webp">
+                                <img loading="lazy" src="img/portafolio/9.jpg" alt="Imagen Proyecto">
+                            </picture>                               
+                        </div>
+                    </div> 
+
+                    <div class="item" 
+                        data-categoria="blog" 
+                        data-etiquetas="blog entradas comunidad"
+                        data-descripcion="BlogTech"
+                        >
+                        <div class="item-contenido">
+                         <picture>
+                                <source loading="lazy" srcset="img/portafolio/10.avif" type="image/avif">
+                                <source loading="lazy" srcset="img/portafolio/10.webp" type="image/webp">
+                                <img loading="lazy" src="img/portafolio/10.jpg" alt="Imagen Proyecto">
+                            </picture>                               
+                        </div>
+                    </div>
+                    <div class="item" 
+                        data-categoria="blog" 
+                        data-etiquetas="blog entradas comunidad café cafetería bebidas"
+                        data-descripcion="BlogDeCafé"
+                        >
+                        <div class="item-contenido">
+                          <picture>
+                                <source loading="lazy" srcset="img/portafolio/11.avif" type="image/avif">
+                                <source loading="lazy" srcset="img/portafolio/11.webp" type="image/webp">
+                                <img loading="lazy" src="img/portafolio/11.jpg" alt="Imagen Proyecto">
+                            </picture>                               
+                        </div>
+                    </div>
+
+                    <div class="item" 
+                        data-categoria="e-commerce" 
+                        data-etiquetas="e-commerce tiendas muebles servicios compras madera carrito "
+                        data-descripcion="Tienda Muebles"
+                        >
+                        <div class="item-contenido">
+                         <picture>
+                                <source loading="lazy" srcset="img/portafolio/12.avif" type="image/avif">
+                                <source loading="lazy" srcset="img/portafolio/12.webp" type="image/webp">
+                                <img loading="lazy" src="img/portafolio/12.jpg" alt="Imagen Proyecto">
+                            </picture>                               
+                        </div>
+                    </div>
+                    <div class="item" 
+                        data-categoria="portafolios" 
+                        data-etiquetas="portafolios desarrollador freelancer servicios "
+                        data-descripcion="Portafolio Web Freelancer"
+                        >
+                        <div class="item-contenido">
+                            <picture>
+                                <source loading="lazy" srcset="img/portafolio/13.avif" type="image/avif">
+                                <source loading="lazy" srcset="img/portafolio/13.webp" type="image/webp">
+                                <img loading="lazy" src="img/portafolio/13.jpg" alt="Imagen Proyecto">
+                            </picture>                               
+                        </div>
+                    </div>
+                    <div class="item" 
+                        data-categoria="formularios" 
+                        data-etiquetas="formularios validación envio registro javascript"
+                        data-descripcion="Formulario de registro"
+                        >
+                        <div class="item-contenido">
+                        <picture>
+                                <source loading="lazy" srcset="img/portafolio/14.avif" type="image/avif">
+                                <source loading="lazy" srcset="img/portafolio/14.webp" type="image/webp">
+                                <img loading="lazy" src="img/portafolio/14.jpg" alt="Imagen Proyecto">
+                            </picture>                               
+                        </div>
+                    </div>
+                    <div class="item" 
+                        data-categoria="formularios" 
+                        data-etiquetas="formularios validación envio javascript "
+                        data-descripcion="Formulario de contacto"
+                        >
+                        <div class="item-contenido">
+                         <picture>
+                                <source loading="lazy" srcset="img/portafolio/15.avif" type="image/avif">
+                                <source loading="lazy" srcset="img/portafolio/15.webp" type="image/webp">
+                                <img loading="lazy" src="img/portafolio/15.jpg" alt="Imagen Proyecto">
+                            </picture>                               
+                        </div>
+                    </div>
+                    <div class="item" 
+                        data-categoria="portafolios" 
+                        data-etiquetas="portafolios freelancer desarrollador bootstrap javascript servicios "
+                        data-descripcion="Portafolio desarrollador Web"
+                        >
+                        <div class="item-contenido">
+                          <picture>
+                                <source loading="lazy" srcset="img/portafolio/16.avif" type="image/avif">
+                                <source loading="lazy" srcset="img/portafolio/16.webp" type="image/webp">
+                                <img loading="lazy" src="img/portafolio/16.jpg" alt="Imagen Proyecto">
+                            </picture>                                
+                        </div>
+                    </div>
+                    <div class="item" 
+                        data-categoria="portafolios" 
+                        data-etiquetas="portafolios freelancer desarrollador javascript servicios validación "
+                        data-descripcion="Portafolio Web de Mario Andrés"
+                        >
+                        <div class="item-contenido">
+                           <picture>
+                                <source loading="lazy" srcset="img/portafolio/17.avif" type="image/avif">
+                                <source loading="lazy" srcset="img/portafolio/17.webp" type="image/webp">
+                                <img loading="lazy" src="img/portafolio/17.jpg" alt="Imagen Proyecto">
+                            </picture>                              
+                        </div>
+                    </div>
+                    <div class="item" 
+                        data-categoria="comidas y bebidas" 
+                        data-etiquetas="comidas bebidas food platillos domicilios sass"
+                        data-descripcion= "Mario´sFood"
+                        >
+                        <div class="item-contenido">
+                       <picture>
+                                <source loading="lazy" srcset="img/portafolio/18.avif" type="image/avif">
+                                <source loading="lazy" srcset="img/portafolio/18.webp" type="image/webp">
+                                <img loading="lazy" src="img/portafolio/18.jpg" alt="Imagen Proyecto">
+                            </picture>                               
+                        </div>
+                </div>
+            
+                    </section>
+
+                    <section class="overlay" id="overlay">
+                        <div class="contenedor-img">
+                            <button id="btn-cerrar-popup"><i class="fa-solid fa-xmark"></i></button>                                                     
+                                <img loading="lazy" src="" alt="Imagen portafolio">                                                    
+                        </div>
+                        <a class="descripcion" target="_blank" href=""></a>                                                                                                                                                          
+                    </section>
+                </div>
+            </div>
+
+
+            <!--Sección de Contacto-->
+            <div class="row contacto justify-content-center" id="contacto">
+                <div class="col-12 col-lg-8">
+                    <h2 class="titulo">Contacto</h2>
+                    <form class="formulario needs-validation" novalidate">
+                        <div class="form-group row">
+                            <div class="col-12 col-md-6">
+                                <input type="text" name="nombre" id="#" placeholder="Nombre" class="form-control" required>
+                                <div class="invalid-feedback">
+                                    Por favor ingrese su nombre.
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <input type="email" name="correo" id="#" placeholder="Correo" class="form-control" required>
+                                <div class="invalid-feedback">
+                                    Por favor ingrese una cuenta de correo valida.
+                                </div>
+                            </div>                            
+                        </div>
+                        <textarea name="mensaje" id="#" placeholder="Mensaje" class="form-control" required></textarea>
+                        <div class="invalid-feedback">
+                            Por favor ingrese un mensaje en el área de texto.
+                        </div>
+                        <div class="form.group d-flex justify-content-center">
+                            <input type="submit" class="boton" value="Enviar" >                            
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+
+        </div>
+    </main>
+
+    <!--Footer-->
+    <footer class="container">
+            <div class="d-flex redes-sociales justify-content-center align-items-center p-5">
+                <div class="contenedor-icono">
+                    <a href="https://www.linkedin.com/in/mario-andr%C3%A9s-hern%C3%A1ndez-zapata-0984721aa" target="_blank" class="linkedin" ><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#" target="_blank" class="twitter" ><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#" target="_blank" class="facebook" ><i class="fa-brands fa-facebook-square"></i></a>                    
+                </div>
+            </div>
+            <div class="creado-por mb-3 text-center">
+                <p>Derechos reservados &copy; 2022 . By <a href="#">Mario Andrés Hernández</a> Web Developer</p>
+            </div>
+      
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>      
+    <script src="https://cdn.jsdelivr.net/npm/web-animations-js@2.3.2/web-animations.min.js"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/muuri@0.9.5/dist/muuri.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
