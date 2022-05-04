@@ -393,7 +393,7 @@ footer .creado-por {
 }
 
 footer .creado-por a {
-    color: var(--blanco);
+    color: var(--terciario);
     font-size: 1.8rem;
     
 }
