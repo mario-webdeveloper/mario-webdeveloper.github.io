@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Startup</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <link rel="preload" href="build/css/app.css" as="style">
+    <link rel="stylesheet" href="build/css/app.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__grid contenedor">
+            <div class="header__logo">
+                <a href="/">
+                    <h1 class="header__logo-titulo">Start<span>Up</span></h1>
+                </a>
+            </div>
+
+            <nav class="nav">
+                <a href="#servicios" class="nav__link">Servicios</a>                
+                <a href="#nosotros" class="nav__link">Nosotros</a>
+                <a href="#blog" class="nav__link">Blog</a>
+                <a href="#contacto" class="nav__link">Contacto</a>
+            </nav>
+        </div>
+    </header> <!--.header-->
+
+    <section class="slider contenedor">
+        <ul class="slider__contenedor">
+            <li class="slider__slide">
+                <picture>
+                    <source srcset="build/img/slide_01.avif" type="image/avif">
+                    <source  srcset="build/img/slide_01.webp" type="image/webp">
+                    <img class="slider__imagen" src="build/img/slide_01.jpg" alt="Imagen Slide">
+                </picture>
+            </li>
+            <li class="slider__slide">
+                <picture>
+                    <source srcset="build/img/slide_02.avif" type="image/avif">
+                    <source  srcset="build/img/slide_02.webp" type="image/webp">
+                    <img class="slider__imagen" src="build/img/slide_02.jpg" alt="Imagen Slide">
+                </picture>
+            </li>
+            <li class="slider__slide">
+                <picture>
+                    <source srcset="build/img/slide_03.avif" type="image/avif">
+                    <source  srcset="build/img/slide_03.webp" type="image/webp">
+                    <img class="slider__imagen" src="build/img/slide_03.jpg" alt="Imagen Slide">
+                </picture>
+            </li>
+        </ul>
+    </section><!--.slider-->
+
+    <main class="servicios" id="servicios">
+        <h2 class="servicios__heading contenedor">Nuestros <span>Servicios</span></h2>
+
+        <div class="servicios__grid contenedor">
+
+            <div class="servicio">
+                <div class="servicio__imagen">
+                    <picture>
+                        <source loading="lazy" srcset="build/img/servicio1.avif" type="image/avif">
+                        <source loading="lazy" srcset="build/img/servicio1.webp" type="image/webp">
+                        <img loading="lazy" src="build/img/servicio1.png alt="">
+                    </picture>
+                    <h3 class="servicio__nombre">Servicios Cloud</h3>
+                </div>
+                <div class="servicio__contenido">
+                    <p class="servicio__texto">TEAM de trabajo dispuesto a ayudarte con alojar tu infraestructura en la nube. Con experiencia en Google Cloud, AWS y Azure.</p>
+                    <a href="#" class="servicio__enlace">Ver Servicio</a>
+                </div>
+            </div> <!--.servicio-->
+
+            <div class="servicio">
+                <div class="servicio__imagen">
+                    <picture>
+                        <source loading="lazy" srcset="build/img/servicio2.avif" type="image/avif">
+                        <source loading="lazy" srcset="build/img/servicio2.webp" type="image/webp">
+                        <img loading="lazy" src="build/img/servicio2.png" alt="">
+                    </picture>
+                    <h3 class="servicio__nombre">Business Intelligence</h3>
+                </div>
+                <div class="servicio__contenido">
+                    <p class="servicio__texto">TEAM con experiencia en configuración de Routers, Switches, OLT, ONU y AP. Con capacidad de crear VLAN, VPN, Intranet y diversas configuraciones.</p>
+                    <a href="#" class="servicio__enlace">Ver Servicio</a>
+                </div>
+            </div> <!--.servicio-->
+
+            <div class="servicio">
+                <div class="servicio__imagen">
+                    <picture>
+                        <source loading="lazy" srcset="build/img/servicio3.avif" type="image/avif">
+                        <source loading="lazy" srcset="build/img/servicio3.webp" type="image/webp">
+                        <img loading="lazy" src="build/img/servicio3.png" alt="Imagen Servicio">
+                    </picture>
+                    <h3 class="servicio__nombre">Diseño y Desarrollo WEB</h3>
+                </div>
+                <div class="servicio__contenido">
+                    <p class="servicio__texto">TEAM capacitado en proyectar el objetivo de tu empresa o emprendimiento sobre un sitio web amigable para tus clientes.</p>
+                    <a href="#" class="servicio__enlace">Ver Servicio</a>
+                </div>
+            </div> <!--.servicio-->
+
+        </div>
+    </main><!--.servicios-->
+
+    <section class="nosotros" id="nosotros">
+        <h2 class="nosotros__heading contenedor">Sobre <span>Nosotros</span></h2>
+
+        <div class="nosotros__grid contenedor">
+            <p class="nosotros__texto">Somos un grupo de emprendedores amantes de la tecnología, con muchas ganas de apoyar y brindar conocimiento, facilitando esos procesos tecnológicos tediosos y así nuestros clientes puedan enfocar su tiempo en obtener sus metas Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique quaerat nam numquam, consectetur natus culpa excepturi labore reiciendis ducimus nobis temporibus. Dolorem earum incidunt iusto repudiandae adipisci impedit, provident porro..</p>
+
+            <picture>
+                <source loading="lazy" srcset="build/img/nosotros.avif" type="image/avif">
+                <source loading="lazy" srcset="build/img/nosotros.webp" type="image/webp">
+                <img class="nosotros__imagen" loading="lazy" src="build/img/nosotros.jpg" alt="">
+            </picture>
+        </div>
+    </section><!--.nosotros-->
+
+
+    <div class="testimoniales__bg">
+        <div class="testimoniales-blog contenedor">
+            <section class="testimoniales-blog__testimoniales">
+                <h2 class="testimoniales-blog__heading">Que dicen <span>Nuestros Clientes</span> </h2>
+    
+                <div class="testimonial">
+                    <picture>
+                        <source loading="lazy" srcset="build/img/clientes.avif" type="image/avif">
+                        <source loading="lazy" srcset="build/img/clientes.webp" type="image/webp">               
+                        <img loading="lazy" class="testimonial__imagen" src="build/img/clientes.jpg" alt="imagen testimonial">
+                    </picture>
+    
+                    <div class="testimonial__contenido">
+                        <p class="testimonial__nombre">Secretaría de Gobierno</p>
+                        <p class="testimonial__texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, aliquam deleniti. Id, quas porro illo deleniti excepturi hic unde eum vel mollitia aliquid molestiae earum harum exercitationem doloribus iste. Nostrum.</p>
+                    </div>
+                </div>
+            </section>
+            <section class="testimoniales-blog__blog" id="blog">
+                <h2 class="testimoniales-blog__heading">Últimas entradas <span>de nuestro Blog</span> </h2>
+    
+                <div class="entrada">
+                    <div class="entrada__imagen-contenedor">
+                        <picture>
+                            <source loading="lazy" srcset="build/img/blog_1.avif" type="image/avif">
+                            <source loading="lazy" srcset="build/img/blog_1.webp" type="image/webp">                        
+                            <img  loading="lazy" class="entrada__imagen" src="build/img/blog_1.jpg" alt="imagen blog">
+                        </picture>
+                    </div>
+                    <div class="entrada__contenido">
+                        <h3 class="entrada__nombre">Titulo aquí</h3>
+                        <p class="entrada__meta">Publicado por bienes raices el 10 de agosto de 2022 - 10 Comentarios</p>
+                        <p class="entrada__texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id est neque, asperiores veritatis dolorum nisi</p>
+                        <a class="entrada__enlace" href="#">Leer Artículo</a>
+                    </div>
+                </div> <!--.entrada-->
+    
+                <div class="entrada">
+                    <div class="entrada__imagen-contenedor">
+                        <picture>
+                            <source loading="lazy" srcset="build/img/blog_2.avif" type="image/avif">
+                            <source loading="lazy" srcset="build/img/blog_2.webp" type="image/webp">
+                            <img loading="lazy" class="entrada__imagen" src="build/img/blog_2.jpg" alt="imagen blog">
+                        </picture>
+                    </div>
+                    <div class="entrada__contenido">
+                        <h3 class="entrada__nombre">Titulo aquí</h3>
+                        <p class="entrada__meta">Publicado por bienes raices el 10 de agosto de 2022 - 10 Comentarios</p>
+                        <p class="entrada__texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id est neque, asperiores veritatis dolorum nisi</p>
+                        <a class="entrada__enlace" href="#">Leer Artículo</a>
+                    </div>
+                </div> <!--.entrada-->
+    
+                <div class="entrada">
+                    <div class="entrada__imagen-contenedor">
+                        <picture>
+                            <source loading="lazy" srcset="build/img/blog_3.avif" type="image/avif">
+                            <source loading="lazy" srcset="build/img/blog_3.webp" type="image/webp">                        
+                            <img loading="lazy" class="entrada__imagen" src="build/img/blog_3.jpg" alt="imagen blog">
+                        </picture>
+                    </div>
+                    <div class="entrada__contenido">
+                        <h3 class="entrada__nombre">Titulo aquí</h3>
+                        <p class="entrada__meta">Publicado por bienes raices el 10 de agosto de 2022 - 10 Comentarios</p>
+                        <p class="entrada__texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id est neque, asperiores veritatis dolorum nisi</p>
+                        <a class="entrada__enlace" href="#">Leer Artículo</a>
+                    </div>
+                </div> <!--.entrada-->
+            </section>
+        </div>
+    </div><!--.tesimoniales-blog-->
+
+    <section class="cita">
+        <h2 class="cita__heading">Realiza una cita</h2>
+        <p class="cita__texto">Agenda tu cita totalmente gratis en el horario mas adecuado y asi conoceras mas acerca de lo quenemos para tí.</p>
+
+        <a class="cita__enlace" href="#">Agendar cita</a>
+    </section><!--.cita-->
+
+    <footer class="footer" id="contacto">
+        <div class="footer__grid contenedor">
+            <div class="footer__widget">
+                <h3 class="footer__heading">Más de <span> Nosotros</span></h3>
+                <p class="footer__texto">Conoce mas acerca de nosotros y como nos hemos forjado para obtener grandes resultados</p>
+            </div>
+            <div class="footer__widget">
+                <h3 class="footer__heading">Horarios de <span>Atención</span></h3>
+                <p class="footer__texto">Lun-Vie: 9AM - 7PM</p>
+                <p class="footer__texto">Sábado: 9AM - 2PM</p>
+                <p class="footer__texto">Domingo: Cerrado</p>
+            </div>
+            <div class="footer__widget">
+                <h3 class="footer__heading">Contacto y <span>Redes</span></h3>
+                <p class="footer__texto">Centro Empresarial Pontevedra</p>
+
+                <nav class="sociales">
+                    <a class="sociales__enlace" target="_blank" rel="noopener noreferrer" href="https://facebook.com">
+                        <span class="sociales__accesible">Facebook</span>                    
+                    </a>
+                    <a class="sociales__enlace" target="_blank" rel="noopener noreferrer" href="https://twitter.com">
+                        <span class="sociales__accesible">Twitter</span> 
+                    </a>
+                    <a class="sociales__enlace" target="_blank" rel="noopener noreferrer" href="https://instagram.com">
+                        <span class="sociales__accesible">Instagram</span> 
+                    </a>
+                    <a class="sociales__enlace" target="_blank" rel="noopener noreferrer" href="https://pinterest.com">
+                        <span class="sociales__accesible">Pinterest</span> 
+                    </a>
+                    <a class="sociales__enlace" target="_blank" rel="noopener noreferrer" href="https://youtube.com">
+                        <span class="sociales__accesible">YouTube</span> 
+                    </a>
+                    <a class="sociales__enlace" target="_blank" rel="noopener noreferrer" href="https://tiktok.com">
+                        <span class="sociales__accesible">TikTok</span> 
+                    </a>
+            
+                </nav><!--.sociales-->
+            </div>
+        </div>
+
+        <p class="footer__copyright">StartUp Mario &copy; 2022 Derechos reservados</p>
+    </footer>
+   
+ 
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="build/js/bundle.min.js"></script>
+</body>
+</html>
